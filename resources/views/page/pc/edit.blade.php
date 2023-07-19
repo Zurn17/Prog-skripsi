@@ -1,18 +1,18 @@
 @extends('layouts.master')
-@section('title', 'Edit PC')
-@section('header', 'List Pc')
+@section('title', 'Edit')
+@section('header', 'List Device')
 @section('content')
     <a href="{{ route('list-pc.index') }}" class="btn-warning mb-3 btn">Kembali</a>
     <div class="card">
         <div class="card-header">
-            <h6>List Pc</h6>
+            <h6>List device</h6>
         </div>
         <div class="card-body">
             <form action="{{ route('list-pc.update', $client->id) }}" method="POST">
                 @method('PUT')
                 @csrf
                 <div class="form-group">
-                    <label for='name'>Nama PC</label>
+                    <label for='name'>Nama Device</label>
                     <input type='text' placeholder="Nama PC" value="{{ old('name', $client->name) }}"
                         class="form-control @error('name') is-invalid @enderror" name='name' id='name' class=''>
                     @error('name')

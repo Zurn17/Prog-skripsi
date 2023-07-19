@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('header', 'Log Laporan Pc')
+@section('header', 'Log Laporan Device')
 @section('content')
     @if (session()->has('success'))
         <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -34,14 +34,14 @@
     </form>
     <div class="card">
         <div class="card-header">
-            <h6>Log Laporan Pc</h6>
+            <h6>Log Laporan Device</h6>
         </div>
         <div class="card-body">
             <table class="table">
                 <thead>
                     <tr>
                         <th>No</th>
-                        <th>Nama PC</th>
+                        <th>Nama Device</th>
                         <th>Ip Address</th>
                         <th>Status</th>
                         <th>Tanggal</th>

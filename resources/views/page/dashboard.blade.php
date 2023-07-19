@@ -9,7 +9,7 @@
                 </div>
                 <div class="card-wrap">
                     <div class="card-header">
-                        <h4>Total PC</h4>
+                        <h4>Total Device</h4>
                     </div>
                     <div class="card-body">
                         {{ $pc }}

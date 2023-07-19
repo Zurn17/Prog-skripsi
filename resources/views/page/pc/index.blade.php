@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('header', 'List Pc')
+@section('header', 'List Device')
 @section('content')
     @if (session()->has('success'))
         <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -11,14 +11,14 @@
     @endif
     <div class="card">
         <div class="card-header">
-            <h6>List Pc</h6>
+            <h6>Data List Device</h6>
         </div>
         <div class="card-body">
             <table class="table">
                 <thead>
                     <tr>
                         <th>No</th>
-                        <th>Nama PC</th>
+                        <th>Nama Device</th>
                         <th>Ip Address</th>
                         <th>Status</th>
                         <th>Action</th>

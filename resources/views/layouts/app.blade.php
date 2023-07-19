@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Login - Aplikasi Monitoring Jaringan</title>
+    <title>Login - Monitoring Jaringan</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -21,12 +21,13 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 
-<body style="background-image: url({{ asset('assets/img/bg-login.jpg') }})">
+<body style="background-image: url({{ asset('assets/img/bg-login.jpg') }});background-size: cover;">
     <div id="app">
         <main class="py-5 my-5">
-            <h1 class="text-center text-white">Login Aplikasi</h1>
+            <h1 class="text-center text-white">Login</h1>
             @yield('content')
         </main>
+    </div>
     </div>
 </body>
 
